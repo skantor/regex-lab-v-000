@@ -1,13 +1,15 @@
 def starts_with_a_vowel?(word)
-
+  word.grep(/\[aeiouAEIOU]\w+/)
 end
 
-def words_starting_with_un_and_ending_with_ing(text)
+/^[aeiouAEIOU]\w+/
 
+def words_starting_with_un_and_ending_with_ing(text)
+  text.grep(/\["un"]/)
 end
 
 def words_five_letters_long(text)
-
+  text.scan(/{5}/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
